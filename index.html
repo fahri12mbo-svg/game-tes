@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Angka</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tebak Angka 🎯</h1>
+        <p>Saya telah memilih sebuah angka antara <strong>1 sampai 100</strong>. Coba tebak!</p>
+
+        <div class="input-group" id="formTebak">
+            <input type="number" id="inputTebak" min="1" max="100" placeholder="Masukkan angka...">
+            <button id="btnTebak" onclick="cekTebakan()">Tebak</button>
+        </div>
+
+        <div id="pesan"></div>
+        <div class="info" id="infoSisa">Sisa Kesempatan: 10</div>
+
+        <button id="btnReset" onclick="mulaiBaru()">Main Lagi</button>
+    </div>
+
+    <!-- Menghubungkan file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
